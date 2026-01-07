@@ -12,12 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <link rel="stylesheet" href="styles.css?v=6" />
     <!-- Preload critical resources -->
-    <link rel="preload" href="Hero_Background.png" as="image" />
+    <link rel="preload" href="Hero_Background_optimized.webp" as="image" fetchpriority="high" />
     <link rel="preload" href="Fonts/antonio/Antonio-SemiBold.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="Fonts/manrope/Manrope-Regular.ttf" as="font" type="font/ttf" crossorigin />
   </head>
@@ -64,8 +65,9 @@
     <main>
       <section id="top" class="hero hero-dark">
         <picture class="hero-media">
+          <source srcset="Hero_Background_optimized.webp" type="image/webp" />
           <img
-            src="Hero_Background.png"
+            src="Hero_Background_optimized.jpg"
             alt="Dramatische Beleuchtung für JUMA Hero"
             fetchpriority="high"
             width="1920"
@@ -104,13 +106,16 @@
             </p>
           </div>
           <div class="section-media">
-            <img
-              src="Bilder/Projektbilder/20240408_145405.jpg"
-              alt="Architektonischer Raum mit anspruchsvoller Beleuchtung"
-              loading="lazy"
-              width="800"
-              height="600"
-            />
+            <picture>
+              <source srcset="Bilder/Projektbilder/20240408_145405_optimized.jpg" type="image/jpeg" />
+              <img
+                src="Bilder/Projektbilder/20240408_145405_optimized.jpg"
+                alt="Architektonischer Raum mit anspruchsvoller Beleuchtung"
+                loading="lazy"
+                width="800"
+                height="600"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -208,7 +213,10 @@
           <div class="reference-grid">
             <article class="reference-card reference-featured">
               <div class="reference-image">
-                <img src="Bilder/Projektbilder/24092005 Round Chandelier Entrance.jpg" alt="Palais Esterhazy Wien - Empire-Stil Luster" loading="lazy" width="800" height="500" />
+                <picture>
+                  <source srcset="Bilder/Projektbilder/24092005_optimized.webp" type="image/webp" />
+                  <img src="Bilder/Projektbilder/24092005_optimized.webp" alt="Palais Esterhazy Wien - Empire-Stil Luster" loading="lazy" width="800" height="500" />
+                </picture>
               </div>
               <div class="reference-content">
                 <h3>Palais Esterhazy, Wien</h3>
@@ -224,7 +232,10 @@
             </article>
             <article class="reference-card">
               <div class="reference-image">
-                <img src="Bilder/Projektbilder/24092302 Oval Chandelier.jpg" alt="Ritz Carlton - Kristallleuchter" loading="lazy" width="600" height="400" />
+                <picture>
+                  <source srcset="Bilder/Projektbilder/24092302_optimized.webp" type="image/webp" />
+                  <img src="Bilder/Projektbilder/24092302_optimized.webp" alt="Ritz Carlton - Kristallleuchter" loading="lazy" width="600" height="400" />
+                </picture>
               </div>
               <div class="reference-content">
                 <h3>Ritz Carlton</h3>
@@ -233,7 +244,10 @@
             </article>
             <article class="reference-card">
               <div class="reference-image">
-                <img src="Bilder/Projektbilder/24092002 Round Chandelier Living Room.jpg" alt="Residents P05 - Moderne Wohnbeleuchtung" loading="lazy" width="600" height="400" />
+                <picture>
+                  <source srcset="Bilder/Projektbilder/24092002_optimized.webp" type="image/webp" />
+                  <img src="Bilder/Projektbilder/24092002_optimized.webp" alt="Residents P05 - Moderne Wohnbeleuchtung" loading="lazy" width="600" height="400" />
+                </picture>
               </div>
               <div class="reference-content">
                 <h3>Residents P05</h3>
@@ -258,13 +272,16 @@
             </p>
           </div>
           <div class="section-media">
-            <img
-              src="Bilder/Unternehmen/Mohammad Juma.jpg"
-              alt="JUMA Leuchten – Wiener Familienunternehmen"
-              loading="lazy"
-              width="800"
-              height="600"
-            />
+            <picture>
+              <source srcset="Bilder/Unternehmen/Mohammad Juma_optimized.webp" type="image/webp" />
+              <img
+                src="Bilder/Unternehmen/Mohammad Juma_optimized.webp"
+                alt="JUMA Leuchten – Wiener Familienunternehmen"
+                loading="lazy"
+                width="800"
+                height="600"
+              />
+            </picture>
           </div>
         </div>
       </section>
