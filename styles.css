@@ -390,7 +390,7 @@ button {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, #000000 0%, #000000 40%, rgba(0, 0, 0, 0) 100%);
+  background: rgba(0, 0, 0, 0.5); /* 50% black overlay */
   z-index: 1;
   display: none; /* Hidden by default, shown on mobile */
 }
@@ -987,15 +987,16 @@ button {
   }
 
   .hero-media {
-    height: 100%; /* Image takes full height again */
+    height: 30vh; /* Top 30% for image, leaving 70% black below */
+    bottom: auto;
   }
 
   .hero-media img {
-    object-position: center 20%; /* Adjust focus */
+    object-position: center top; /* Focus on the chandelier */
   }
 
   .hero-overlay {
-    display: block; /* Show gradient overlay on mobile/tablet */
+    display: none; /* No longer needed with solid black bottom */
   }
 
   .hero-title-main {
@@ -1171,7 +1172,7 @@ button {
   }
 
   .hero-content-wrapper {
-    padding-bottom: 10vh;
+    padding-bottom: 20px;
   }
 
   .hero-title-main {
