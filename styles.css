@@ -371,6 +371,7 @@ button {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  background-color: #000000; /* Ensure solid black background */
 }
 
 .hero-media {
@@ -985,8 +986,17 @@ button {
     padding-bottom: 20px;
   }
 
+  .hero-media {
+    height: 30vh; /* Top 30% for image, leaving 70% black below */
+    bottom: auto;
+  }
+
+  .hero-media img {
+    object-position: center top; /* Focus on the chandelier */
+  }
+
   .hero-overlay {
-    display: block; /* Show overlay on mobile/tablet */
+    display: none; /* No longer needed with solid black bottom */
   }
 
   .hero-title-main {
