@@ -844,8 +844,33 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  font-size: 15px;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #999999 !important;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #4C4037 !important;
+}
+
+@media (max-width: 767px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .footer-links {
+    justify-content: center;
+  }
 }
 
 .site-footer a {
