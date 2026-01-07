@@ -403,7 +403,7 @@ button {
   align-items: flex-end; /* Position content at bottom */
   justify-content: center;
   padding: 0;
-  padding-bottom: 20px; /* Set to 20px as requested for web view */
+  padding-bottom: 10vh; /* Moved 10% higher from previous 20px */
 }
 
 .hero-content {
@@ -983,7 +983,7 @@ button {
   }
 
   .hero-content-wrapper {
-    padding-bottom: 20px;
+    padding-bottom: 10vh;
   }
 
   .hero-media {
@@ -1172,7 +1172,7 @@ button {
   }
 
   .hero-content-wrapper {
-    padding-bottom: 20px;
+    padding-bottom: 10vh;
   }
 
   .hero-title-main {
