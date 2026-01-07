@@ -386,6 +386,14 @@ button {
   object-position: center 40%;
 }
 
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* 50% black overlay */
+  z-index: 1;
+  display: none; /* Hidden by default, shown on mobile */
+}
+
 .hero-content-wrapper {
   position: relative;
   z-index: 2;
@@ -394,7 +402,7 @@ button {
   align-items: flex-end; /* Position content at bottom */
   justify-content: center;
   padding: 0;
-  padding-bottom: 25vh; /* Moved 20% upward from previous 80px */
+  padding-bottom: 20px; /* Set to 20px as requested for web view */
 }
 
 .hero-content {
@@ -974,7 +982,11 @@ button {
   }
 
   .hero-content-wrapper {
-    padding-bottom: 20vh;
+    padding-bottom: 20px;
+  }
+
+  .hero-overlay {
+    display: block; /* Show overlay on mobile/tablet */
   }
 
   .hero-title-main {
@@ -1150,7 +1162,7 @@ button {
   }
 
   .hero-content-wrapper {
-    padding-bottom: 15vh;
+    padding-bottom: 20px;
   }
 
   .hero-title-main {
