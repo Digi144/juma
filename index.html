@@ -16,6 +16,10 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <link rel="stylesheet" href="styles.css?v=6" />
+    <!-- Preload critical resources -->
+    <link rel="preload" href="Hero_Background.png" as="image" />
+    <link rel="preload" href="Fonts/antonio/Antonio-SemiBold.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="Fonts/manrope/Manrope-Regular.ttf" as="font" type="font/ttf" crossorigin />
   </head>
   <body>
     <header class="site-header">
@@ -63,6 +67,9 @@
           <img
             src="Hero_Background.png"
             alt="Dramatische Beleuchtung für JUMA Hero"
+            fetchpriority="high"
+            width="1920"
+            height="1080"
           />
         </picture>
         <div class="hero-content-wrapper">
@@ -101,6 +108,8 @@
               src="Bilder/Projektbilder/20240408_145405.jpg"
               alt="Architektonischer Raum mit anspruchsvoller Beleuchtung"
               loading="lazy"
+              width="800"
+              height="600"
             />
           </div>
         </div>
@@ -199,7 +208,7 @@
           <div class="reference-grid">
             <article class="reference-card reference-featured">
               <div class="reference-image">
-                <img src="Bilder/Projektbilder/24092005 Round Chandelier Entrance.jpg" alt="Palais Esterhazy Wien - Empire-Stil Luster" loading="lazy" />
+                <img src="Bilder/Projektbilder/24092005 Round Chandelier Entrance.jpg" alt="Palais Esterhazy Wien - Empire-Stil Luster" loading="lazy" width="800" height="500" />
               </div>
               <div class="reference-content">
                 <h3>Palais Esterhazy, Wien</h3>
@@ -215,7 +224,7 @@
             </article>
             <article class="reference-card">
               <div class="reference-image">
-                <img src="Bilder/Projektbilder/24092302 Oval Chandelier.jpg" alt="Ritz Carlton - Kristallleuchter" loading="lazy" />
+                <img src="Bilder/Projektbilder/24092302 Oval Chandelier.jpg" alt="Ritz Carlton - Kristallleuchter" loading="lazy" width="600" height="400" />
               </div>
               <div class="reference-content">
                 <h3>Ritz Carlton</h3>
@@ -224,7 +233,7 @@
             </article>
             <article class="reference-card">
               <div class="reference-image">
-                <img src="Bilder/Projektbilder/24092002 Round Chandelier Living Room.jpg" alt="Residents P05 - Moderne Wohnbeleuchtung" loading="lazy" />
+                <img src="Bilder/Projektbilder/24092002 Round Chandelier Living Room.jpg" alt="Residents P05 - Moderne Wohnbeleuchtung" loading="lazy" width="600" height="400" />
               </div>
               <div class="reference-content">
                 <h3>Residents P05</h3>
@@ -253,6 +262,8 @@
               src="Bilder/Unternehmen/Mohammad Juma.jpg"
               alt="JUMA Leuchten – Wiener Familienunternehmen"
               loading="lazy"
+              width="800"
+              height="600"
             />
           </div>
         </div>
@@ -306,7 +317,7 @@
       </div>
     </footer>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=2" defer></script>
   </body>
 </html>
 
